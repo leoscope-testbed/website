@@ -87,9 +87,9 @@ Below we list the initial developers of the testbed. Maintainer names are omitte
 
 | **NAME**           | **Email ID** |
 |--------------------|--------------|
+| Aryan Taneja       |t-arytaneja@microsoft.com             |
 | Shubham Tiwari     |shubhamtiwaribits@gmail.com               |
 |                    | tshubham@cs.washington.edu
-| Aryan Taneja       |t-arytaneja@microsoft.com             |
 | Saksham Bhushan    |t-sbhushan@microsoft.com             |
 | Vinod Khandkar     |v.khandkar@surrey.ac.uk             |
 | Abdullahi Abubakar |a.abubakar@surrey.ac.uk             |
