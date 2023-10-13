@@ -4,7 +4,7 @@
 - FAST BACKEND (FASTAPI Backend Implementation)
 - FRONTEND (REACT/HTML/CSS) with AXIOS
 
-This repository contains the implementational details of the Website hosted for LEOScope. The testbed elements and orchestrator implementations reside [here](https://github.com/leoscope-testbed/global-testbed-code)
+This repository contains the implementational details of the Website hosted for LEOScope. The testbed elements and orchestrator implementations reside [here](https://github.com/leoscope-testbed/global-testbed)
 
 ## Architecture
 ![Website Architecture](https://github.com/leopard-testbed/global-testbed/blob/stage/extras/leoscope_arch.jpg?raw=true)
