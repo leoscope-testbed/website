@@ -1,0 +1,4 @@
+[submodule "fast_backend/global-testbed"]
+	path = fast_backend/global-testbed
+	url = https://github.com/leoscope-testbed/global-testbed.git
+	branch = master

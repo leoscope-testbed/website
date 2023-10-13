@@ -1,0 +1,20 @@
+
+.custom-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custom-modal .modal-dialog {
+    max-width: 80%;
+  }
+  
+  .custom-modal .modal-body {
+    max-height: 300px; /* Set the maximum height you want to allow */
+    overflow-y: auto; /* Enable vertical scrolling when the content overflows */
+  }
+  
+  .modal-message {
+    white-space: pre-wrap; /* Preserve line breaks in the text */
+  }
+  

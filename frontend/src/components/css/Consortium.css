@@ -1,0 +1,65 @@
+
+
+#consortium {
+    background-color: #060000;
+    padding: 50px 0;
+  }
+  
+  .consortium-content {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #766f6f;
+  }
+  
+  .consortium-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .consortium-item {
+    font-size: 1.5rem;
+    margin-right: 20px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    color: #959090;
+    transition: all 0.3s ease;
+  }
+  
+  .consortium-item:hover {
+    background-color: #7d7777;
+    color: #fff;
+  }
+  
+
+  #team {
+    background-color: #060000;
+    padding: 50px 0;
+  }
+  
+  .team-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .team-list {
+    list-style: disc;
+    padding: auto;
+  }
+  
+  .team-item {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+    color: #9a9595;
+  }
+  

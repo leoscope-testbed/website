@@ -1,0 +1,44 @@
+.our-services {
+    background-color: #faf8f8;
+    padding: auto 0;
+  }
+  
+  .services-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .service {
+    width: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .service-icon {
+    font-size: 48px;
+    color: #00bcd4;
+  }
+  
+  .service-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .service-description {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #999;
+  }
+  
+  @media (max-width: 768px) {
+    .service {
+      width: 100%;
+    }
+  }
+  
