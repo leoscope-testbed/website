@@ -6,3 +6,4 @@ backend/
 fast_backend/certs/
 fast_backend/config_env.py
 fast_backend/__pycache__/
+.idea

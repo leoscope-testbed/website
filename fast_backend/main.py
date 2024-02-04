@@ -332,8 +332,17 @@ async def read_user_profile(token: str = Depends(oauth2_scheme)):
         raise HTTPException(status_code=401, detail="Invalid authentication credentials")
 
     user = get_user_by_email(token_data.email)
-    first_name,last_name= user.name.split(" ")
-    org,loc=user.team.split(" - ")
+    split_name = user.name.split(" ")
+    if len(split_name) >= 2:
+        first_name,last_name= split_name[:2]
+    elif user.name:
+        first_name = last_name = user.name
+    user_team = user.team.split(" - ")
+    if user.team and (len(user_team) >= 2):
+        org,loc=user.team.split(" - ")
+    else:
+        org = loc = " "
+
     email = user.id
     desc = " "
     new_user_dict = {
@@ -364,7 +373,6 @@ async def create_experiment(experiment: ExperimentCreate, token: str = Depends(o
     :rtype: dict
     """
     # current_user = get_current_user(token)
-    print("***")
     try:
         # code to create experiment in database
         db_experiment = cloud.create_experiment_in_db(experiment, token)

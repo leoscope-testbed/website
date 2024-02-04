@@ -1,7 +1,7 @@
 aiofiles==23.1.0
 anyio==3.6.2
 asgiref==3.6.0
-azure-core==1.26.4
+azure-core==1.28.0
 azure-storage-blob==12.16.0
 backports.zoneinfo==0.2.1
 bcrypt==4.0.1

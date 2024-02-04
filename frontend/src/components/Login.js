@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 import { login } from '../services/api';
 import { Button, Form, FormGroup, Input, Label } from 'reactstrap';
@@ -12,8 +12,13 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [welcomeMessage, setWelcomeMessage] = useState('');
-  const { setIsAuthenticated } = useContext(AuthContext);
-
+  const { isAuthenticated, setIsAuthenticated } = useContext(AuthContext);
+  
+  useEffect(() => {
+    if (isAuthenticated) {
+      navigate('/my-experiments');
+    }
+  }, [isAuthenticated, navigate]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
