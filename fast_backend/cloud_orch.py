@@ -308,7 +308,7 @@ def get_experiments_from_db(email,token):
     return JSONResponse(content=experiment_list_new, status_code=status.HTTP_201_CREATED)
 
 
-def get_runs_from_db(token):
+def get_runs_from_db(token, userid):
     """
     Get experiment run details from the database.
 
@@ -318,7 +318,7 @@ def get_runs_from_db(token):
     :rtype: JSONResponse
     """
     client= client_module.LeotestClient(grpc_hostname=config_env.grpc_hostname,grpc_port=config_env.grpc_port,jwt_access_token=token)
-    res= client.get_runs(runid=None, jobid=None, nodeid=None, time_range=None, limit=None)
+    res= client.get_runs(userid=None, runid=None, jobid=None, nodeid=None, time_range=None, limit=None)
     res = MessageToDict(res)
     run_list = []
     if 'runs' not in res:

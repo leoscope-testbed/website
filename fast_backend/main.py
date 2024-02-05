@@ -538,7 +538,7 @@ async def get_user_runs(token: str = Depends(oauth2_scheme)):
     if user is None:
         raise HTTPException(status_code=401, detail="Invalid authentication credentials")
     else:
-        all_run_list = cloud.get_runs_from_db(token)
+        all_run_list = cloud.get_runs_from_db(token=token, userid=user.id)
     return all_run_list
 
 
